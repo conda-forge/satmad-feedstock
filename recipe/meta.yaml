@@ -1,5 +1,5 @@
 {% set name = "satmad" %}
-{% set version = "0.0.4" %}
+{% set version = "0.0.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c0be3cce7cd559a887b7e702bb1d729efe32a65ae0a11c47b05e0178ba2968a9
+  sha256: 0b31e4b10d3aa3bfa8bff231b85b9f331a594006e48e45249c49cbb11a366fe5
 
 build:
   number: 0
