@@ -5,9 +5,13 @@ Home: https://github.com/egemenimre/satmad/
 
 Package license: GPL-3.0-or-later
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/satmad-feedstock/blob/master/LICENSE.txt)
 
 Summary: SatMAD: Satellite Mission Analysis and Design for Python
+
+Development: https://github.com/egemenimre/satmad/
+
+Documentation: https://satmad.readthedocs.io/
 
 SatMAD is an open source Python package, aiming at providing the base functionality to solve
 satellite mission analysis and design as well as orbital mechanics problems with enough
@@ -122,7 +126,4 @@ Feedstock Maintainers
 =====================
 
 * [@egemenimre](https://github.com/egemenimre/)
-
-
-<!-- dummy commit to enable rerendering -->
 
