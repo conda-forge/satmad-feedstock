@@ -127,6 +127,3 @@ Feedstock Maintainers
 
 * [@egemenimre](https://github.com/egemenimre/)
 
-
-<!-- dummy commit to enable rerendering -->
-
