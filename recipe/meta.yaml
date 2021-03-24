@@ -18,16 +18,17 @@ requirements:
   host:
     - flit-core
     - pip
-    - python
+    - python >=3.6
 
   run:
     - astropy
     - matplotlib-base
     - numpy
     - portion
-    - python
+    - python >=3.6
     - scipy
     - sgp4
+    - pyerfa
 
 test:
   imports:
