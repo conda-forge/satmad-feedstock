@@ -10,7 +10,7 @@ source:
   sha256: f1094e667d56dd20988f2128930c5e11060e0ea617f91ca478535251fa66d8d4
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
@@ -21,7 +21,7 @@ requirements:
     - python >=3.7
 
   run:
-    - astropy
+    - astropy-base
     - jplephem
     - matplotlib-base
     - numpy
