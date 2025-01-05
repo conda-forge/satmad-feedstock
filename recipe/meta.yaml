@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: f1094e667d56dd20988f2128930c5e11060e0ea617f91ca478535251fa66d8d4
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
@@ -18,7 +18,7 @@ requirements:
   host:
     - flit-core
     - pip
-    - python >=3.7
+    - python {{ python_min }}
 
   run:
     - astropy
@@ -26,7 +26,7 @@ requirements:
     - matplotlib-base
     - numpy
     - portion
-    - python >=3.7
+    - python >={{ python_min }}
     - scipy
     - sgp4
     - pyerfa
@@ -43,6 +43,7 @@ test:
     - satmad.utils.tests
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
 
